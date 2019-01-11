@@ -1,0 +1,103 @@
+<html>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<div id="main">
+		<div class="row">
+			<div class="col-md-4">
+				<h1>Sang Kim</h1>
+			</div>
+			<div class="col-md-4">
+				<h1>Projects</h1>
+			</div>
+		</div>
+		<div class="row">
+		  	<div class="col-md-4">
+				<h3>Software Engineer</h3>
+
+				<p>Diligent and bilingual (English and Korean) Software Engineer with 6+ years of experience in the IT industry. Strong background in developing web and mobile applications. Shaped through operative roles within various sized businesses from, Canada, USA and South Korea. Adept at unit testing, feature upgrade, and process improvement.</p>
+
+				<div><img class="image-cropper" src="profile.jpeg" height="400" width="400"></div>
+
+				<h3>Languages</h3>
+				<p>Java, Scala, C++, Node.js, Python</p>
+				<p>MySQL, PostgreSQL, Redis</p>
+				<p>React.js, Angluar.js, HTML, CSS</p>
+				<h3>Cloud</h3>
+				<p>Distributed System, Kafka, Zookeeper, Concurrency, Multi-threading</p>
+				<h3>Resume</h3>
+				<p>Link to the resume</p>
+
+			</div>
+		  	<div class="col-md-4">
+		  		<div>
+					<h3>Bulk ups</h3>
+					<p>Web application for managing meal plans and tracking weight</p>
+					<div class="video-cover video-1"></div>	
+					<iframe src="https://www.youtube.com/embed/DYjDYOAeeZw" width="400" height="255" frameborder="0"></iframe>
+				</div>
+				<div>
+					<h3>Spring Cam</h3>
+					<p>Android camera application with the capacity to resize person’s face and height in real time</p>
+					<div class="video-cover video-2"></div>	
+					<iframe src="https://www.youtube.com/embed/8ClDYCvZieo" width="400" height="255" frameborder="0"></iframe>
+				</div>
+		  	</div>
+		  	<div class="col-md-4">
+				<div>
+					<h3>Momento</h3>
+					<p>A real-time photo sharing application for groups</p>
+					<div class="video-cover video-3"></div>	
+					<iframe src="https://www.youtube.com/embed/U_hgObyESYo" width="400" height="255" frameborder="0"></iframe>
+				</div>
+
+				<div>
+					<h3>Topchart</h3>
+					<p>YouTube playlist web application for finding trending songs from popular music charts</p>
+					<div class="video-cover video-4"></div>	
+					<iframe src="https://www.youtube.com/embed/FIgO3nfWdjU" width="400" height="255" frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script
+		  src="https://code.jquery.com/jquery-3.3.1.min.js"
+		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		  crossorigin="anonymous"></script>
+
+  	<script>
+  		$('.video-1').bind('mouseover', function() {
+		    $('.video-1').fadeOut();
+		    $('.video-2').fadeIn();
+		    $('.video-3').fadeIn();
+		    $('.video-4').fadeIn();
+		});  
+		$('.video-2').bind('mouseover', function() {
+		    $('.video-1').fadeIn();
+		    $('.video-2').fadeOut();
+		    $('.video-3').fadeIn();
+		    $('.video-4').fadeIn();
+		}); 
+		$('.video-3').bind('mouseover', function() {
+		    $('.video-1').fadeIn();
+		    $('.video-2').fadeIn();
+		    $('.video-3').fadeOut();
+		    $('.video-4').fadeIn();
+		}); 
+		$('.video-4').bind('mouseover', function() {
+		    $('.video-1').fadeIn();
+		    $('.video-2').fadeIn();
+		    $('.video-3').fadeIn();
+		    $('.video-4').fadeOut();
+		}); 
+  	</script>
+
+</html>
